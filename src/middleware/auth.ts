@@ -12,6 +12,7 @@ declare global {
   }
 }
 
+// looks for authorization header that starts with "Bearer <key>"
 export const jwtCheck = auth({
   audience: process.env.AUTH0_AUDIENCE,
   issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL,
